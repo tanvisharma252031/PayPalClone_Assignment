@@ -1,0 +1,180 @@
+
+/* MAIN FOOTER */
+.paypal-footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 65px 0 75px;
+  box-sizing: border-box;
+}
+
+/* CONTENT CONTAINER */
+.footer-container {
+  width: 75%;
+  max-width: 1378px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* PAYPAL LOGO */
+.footer-logo {
+  font-size: 58px;
+  font-weight: 750;
+  letter-spacing: -3px;
+  margin-bottom: 48px;
+}
+
+/* FIRST NAVIGATION */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 27px;
+}
+
+.footer-main-links,
+.footer-company-links,
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* NAVIGATION TEXT AND LINKS */
+.paypal-footer a,
+.footer-main-links span,
+.footer-company-links span,
+.footer-legal-links span,
+.footer-country {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.paypal-footer a:hover {
+  text-decoration: underline;
+}
+
+/* COUNTRY */
+.footer-country {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+/* DIVIDER */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: #444;
+  margin-bottom: 27px;
+}
+
+/* SECOND NAVIGATION */
+.footer-secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 28px;
+}
+
+.footer-company-links,
+.footer-legal-links {
+  gap: 30px;
+}
+
+/* DESCRIPTION */
+.footer-description {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.footer-description p {
+  margin: 0 0 25px;
+}
+
+.footer-description a,
+.footer-notes a {
+  text-decoration: underline;
+}
+
+/* BOTTOM NOTES */
+.footer-notes {
+  margin-top: 100px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-notes p {
+  margin: 0 0 8px;
+}
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 1100px) {
+  .footer-container {
+    width: 88%;
+  }
+
+  .footer-top,
+  .footer-secondary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-main-links,
+  .footer-company-links,
+  .footer-legal-links {
+    gap: 20px;
+  }
+
+  .footer-logo {
+    font-size: 48px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .paypal-footer {
+    padding: 40px 0;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+
+  .footer-logo {
+    font-size: 42px;
+    margin-bottom: 32px;
+  }
+
+  .footer-main-links,
+  .footer-company-links,
+  .footer-legal-links {
+    gap: 16px;
+  }
+
+  .footer-top,
+  .footer-secondary {
+    gap: 20px;
+  }
+
+  .footer-divider {
+    margin: 20px 0;
+  }
+
+  .footer-description {
+    line-height: 1.6;
+  }
+
+  .footer-notes {
+    margin-top: 55px;
+    line-height: 1.6;
+  }
+}
