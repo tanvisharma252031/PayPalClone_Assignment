@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import PageToggle from "./components/PageToggle";
@@ -25,8 +26,8 @@ function App() {
       <PageToggle active={tab} onChange={setTab} />
 
       <Hero onSignUp={handleSignUp} />
-      <Footer />
 
+      <Footer />
     </>
   );
 }
