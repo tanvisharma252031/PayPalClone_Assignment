@@ -1,9 +1,12 @@
 
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import PageToggle from "./components/PageToggle";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import ContactSales from "./pages/ContactSales/ContactSales";
 
 function App() {
   const [tab, setTab] = useState("business");
@@ -17,18 +20,31 @@ function App() {
   };
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar
         onLogin={handleLogin}
         onSignUp={handleSignUp}
       />
 
-      <PageToggle active={tab} onChange={setTab} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <PageToggle active={tab} onChange={setTab} />
+              <Hero onSignUp={handleSignUp} />
+            </>
+          }
+        />
 
-      <Hero onSignUp={handleSignUp} />
+        <Route
+          path="/contact-sales"
+          element={<ContactSales />}
+        />
+      </Routes>
 
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

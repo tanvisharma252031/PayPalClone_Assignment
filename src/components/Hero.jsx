@@ -1,6 +1,10 @@
+
+import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 
 function Hero({ onSignUp }) {
+  const navigate = useNavigate();
+
   return (
     <section className="hero">
       <h1>PayPal Open</h1>
@@ -19,7 +23,10 @@ function Hero({ onSignUp }) {
           Sign Up
         </button>
 
-        <button className="hero-btn hero-btn-secondary">
+        <button
+          className="hero-btn hero-btn-secondary"
+          onClick={() => navigate("/contact-sales")}
+        >
           Contact Sales
         </button>
       </div>

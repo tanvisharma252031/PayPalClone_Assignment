@@ -1,0 +1,197 @@
+
+/* FORM CARD */
+.sales-form-card {
+  background: #f5f6fa;
+  border-radius: 25px;
+  padding: 55px 60px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.09);
+  box-sizing: border-box;
+}
+
+/* FORM */
+.sales-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-required {
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+/* INPUTS AND DROPDOWNS */
+.sales-form input:not([type="checkbox"]),
+.sales-form select,
+.sales-form textarea {
+  width: 100%;
+  min-height: 58px;
+  padding: 15px 12px;
+
+  border: 1px solid #a5a5a5;
+  border-radius: 4px;
+
+  background: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  color: #142c50;
+
+  box-sizing: border-box;
+}
+
+.sales-form input::placeholder,
+.sales-form textarea::placeholder {
+  color: #596473;
+  opacity: 1;
+}
+
+.sales-form select {
+  color: #596473;
+  cursor: pointer;
+}
+
+.sales-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* INPUT FOCUS */
+.sales-form input:focus,
+.sales-form select:focus,
+.sales-form textarea:focus {
+  outline: 2px solid #0070e0;
+  border-color: #0070e0;
+}
+
+/* CONSENT */
+.sales-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-top: 12px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #142c50;
+}
+
+.sales-consent input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.sales-consent a {
+  color: #0070e0;
+  text-decoration: underline;
+}
+
+/* SUBMIT BUTTON */
+.sales-submit {
+  width: fit-content;
+  margin-top: 25px;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #000;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sales-submit:hover {
+  background: #333;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .sales-form-card {
+    padding: 30px 22px;
+    border-radius: 18px;
+  }
+
+  .sales-form input:not([type="checkbox"]),
+  .sales-form select,
+  .sales-form textarea {
+    font-size: 14px;
+    min-height: 53px;
+  }
+
+  .sales-consent {
+    font-size: 13px;
+  }
+}
+
+/* FIELD WRAPPER */
+.form-field {
+  width: 100%;
+}
+
+/* ERROR BORDER */
+.sales-form .input-error {
+  border: 2px solid #e00000 !important;
+}
+
+/* ERROR MESSAGE */
+.field-error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #596473;
+  font-size: 15px;
+  margin: 7px 5px 16px;
+}
+
+/* WARNING ICON */
+.error-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: #e00000;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+/* FOCUSED INPUT */
+.sales-form input:focus,
+.sales-form select:focus,
+.sales-form textarea:focus {
+  outline: 3px solid #0070e0;
+  outline-offset: 3px;
+}
+
+/* COUNTRY FIELD */
+.select-label {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #a5a5a5;
+  border-radius: 4px;
+  padding: 9px 12px;
+  color: #596473;
+  font-size: 13px;
+}
+
+.select-label select {
+  border: none;
+  outline: none;
+  padding: 2px 0;
+  min-height: 30px;
+  color: #142c50;
+  font-size: 16px;
+}
